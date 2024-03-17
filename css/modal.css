@@ -1,0 +1,30 @@
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal_show {
+  display: flex;
+}
+.modal__content {
+  margin: auto;
+  position: relative;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 40px #00000050;
+}
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #888;
+}
+.modal__close:hover,
+.modal__close:focus-visible {
+  color: #000;
+}

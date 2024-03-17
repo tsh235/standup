@@ -1,0 +1,39 @@
+.notification {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 80%;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+  border-radius: 16px;
+  background-color: #00992B;
+  padding: 32px;
+  z-index: 1000;
+  transition: transform 0.2s ease, opacity 0.5s ease;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.notification_show {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.2s ease, transform 0.5s ease;
+}
+.notification_error {
+  background-color: #900;
+}
+.notification_success {
+  padding-right: 76px;
+  background: #00992B url('./../img/check.svg') right 32px center / 36px no-repeat;
+}
+
+@media (max-width: 540px) {
+  .notification {
+    bottom: 30px;
+    right: 30px;
+    padding: 16px;
+    font-size: 20px;
+  }
+}
